@@ -297,8 +297,20 @@
     <Content Include="Scripts\knockout.mapping-latest.js" />
     <Content Include="Scripts\knockout\bindings.ko.js" />
     <Content Include="Scripts\bootbox.min.js" />
+    <Content Include="Scripts\knockout\shared.js">
+      <DependentUpon>shared.coffee</DependentUpon>
+    </Content>
     <Content Include="Scripts\knockout\shared.ko.js" />
+    <Content Include="Scripts\knockout\shared.min.js">
+      <DependentUpon>shared.coffee</DependentUpon>
+    </Content>
+    <Content Include="Scripts\knockout\taskList.js">
+      <DependentUpon>taskList.coffee</DependentUpon>
+    </Content>
     <Content Include="Scripts\knockout\taskList.ko.js" />
+    <Content Include="Scripts\knockout\taskList.min.js">
+      <DependentUpon>taskList.coffee</DependentUpon>
+    </Content>
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -343,6 +355,11 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\Shared\_html5shiv.cshtml" />
     <Content Include="Views\TaskList\Index.cshtml" />
+    <Content Include="Scripts\knockout\shared.coffee" />
+    <Content Include="Scripts\knockout\taskList.coffee" />
+    <Content Include="Scripts\knockout\taskList.min.js.map">
+      <DependentUpon>taskList.js</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

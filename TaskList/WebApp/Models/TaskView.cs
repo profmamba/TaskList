@@ -8,19 +8,19 @@ namespace ProfMamba.TaskList.WebApp.Models
 {
 	public class TaskView
 	{
-		public int TaskId { get; set; }
-		public string Description { get; set; }
-		public DateTime CreateDate { get; set; }
-		public TaskType TaskType { get; set; }
-		public string TaskTypeName { get; set; }
+		public int taskId { get; set; }
+		public string description { get; set; }
+		public DateTime createDate { get; set; }
+		public TaskType taskType { get; set; }
+		public string taskTypeName { get; set; }
 
 		public TaskView(Task task)
 		{
-			this.TaskId = task.TaskId;
-			this.Description = task.Description;
-			this.CreateDate = task.CreateDate;
-			this.TaskType = task.TaskType;
-			this.TaskTypeName = task.TaskType.ToFriendlyString();
+			this.taskId = task.TaskId;
+			this.description = task.Description;
+			this.createDate = task.CreateDate;
+			this.taskType = task.TaskType;
+			this.taskTypeName = task.TaskType.ToFriendlyString();
 		}
 	}
 }

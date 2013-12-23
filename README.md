@@ -19,7 +19,8 @@ This project is primarily a sample of my approach to building modern web apps on
 *	Objects are almost anemic because of the nature of the project. This was not intended though.
 
 ## Todo ##
-*	Tests have only been written for logic layer, typically a full suite would include
+* ~~Rewrite Javascript in higher level with anonymous functions~~ Ported to CoffeeScript.
+* Tests have only been written for logic layer, typically a full suite would include
  * Object unit tests for business logic
  * WebApi and MVC controller unit tests
  * Selenium UI integration tests for end to end testing (defined in Specflow)
@@ -30,7 +31,7 @@ This project is primarily a sample of my approach to building modern web apps on
 * The WebApp project needs a lot of cleanup as only the standard templates were used, thus there is a lot of unnecessary bits floating around.
 
 ## Interesting Parts ##
-* A lot of the more interesting parts are floating around in the Knockout parts (the rest seems pretty standard to me since I've been doing it like that for a while, whereas I have been playing a lot with KO and Angular lately)
+* Some of the more interesting parts are floating around in the Knockout parts (the rest seems pretty standard to me since I've been doing it like that for a while, whereas I have been doing a lot with KO and Angular lately)
  * The split of bindings into a ViewModel and independent Controller in WebApp\Scripts\taskList.ko.js (this would be scope and controllers in Angular)
  * The use of shared viewmodels and 'promises' (jqXHR) to reuse common functionality, where a viewmodel can be composed of different views (this would be factories in Angular)
  * The introduction of custom bindings  in KO (to use the timeago.js effectively) (this would be directives in Angular)

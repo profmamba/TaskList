@@ -16,7 +16,7 @@ namespace ProfMamba.TaskList.WebApp
 						"~/Scripts/bootstrap-datetimepicker.min.js",
 						"~/Scripts/knockout-{version}.js",
 						"~/Scripts/knockout.mapping-latest.js",
-						"~/Scripts/knockout/shared.ko.js",
+						"~/Scripts/knockout/shared.js",
 						"~/Scripts/knockout/bindings.ko.js"));
 
 			bundles.Add(new ScriptBundle("~/bundles/ie").Include(
